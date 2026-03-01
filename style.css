@@ -283,71 +283,46 @@ background:#c2185b;
 
 }
 
-/*RESPONSIVE MOBILE*/
-@media (max-width: 768px) {
+/* FIX AGAR TIDAK GESER KE KANAN */
 
-  body {
-    padding: 10px;
-  }
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
 
-  header {
-    text-align: center;
-    padding: 20px 10px;
-  }
+* {
+  box-sizing: border-box;
+}
 
-  header img {
-    width: 120px;
-  }
+/* semua container jangan lebih dari layar */
+.container,
+.card,
+section,
+nav,
+header {
+  max-width: 100%;
+}
 
-  h1 {
-    font-size: 22px;
-  }
+/* NAVBAR FLEX RESPONSIVE */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+}
 
-  /* Navbar jadi vertikal */
-  nav {
+/* khusus mobile */
+@media (max-width:768px){
+
+  nav{
     flex-direction: column;
-    gap: 10px;
-    padding: 15px;
+    align-items: stretch;
   }
 
-  nav a {
-    display: block;
-    width: 100%;
-    text-align: center;
+  nav a{
+    width:100%;
   }
 
-  /* tombol pendaftaran */
-  .btn-daftar {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* card / container */
-  .container,
-  .card,
-  section {
-    width: 100%;
-    margin: 10px 0;
-    padding: 15px;
-  }
-
-  /* tabel agar tidak keluar layar */
-  table {
-    width: 100%;
-    font-size: 14px;
-  }
-
-  th, td {
-    padding: 8px;
-  }
-
-  /* form input */
-  input,
-  select,
-  textarea,
-  button {
-    width: 100%;
-    box-sizing: border-box;
+  .btn-daftar{
+    width:100%;
   }
 
 }
