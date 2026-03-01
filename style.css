@@ -5,6 +5,36 @@ body{
   background: linear-gradient(to bottom, #e48bb3, #f6c9da);
   min-height:100vh;
 }
+/* RESPONSIVE MOBILE */
+@media (max-width: 768px) {
+
+  body {
+    padding: 10px;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  header img {
+    width: 120px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 15px;
+  }
+
+}
 
 /*HEADER*/
 header{
@@ -250,4 +280,5 @@ background:#c2185b;
 .btn-daftar:hover{
   background: linear-gradient(to right, #ffca28, #ffb300);
   transform:translateY(-2px);
+
 }
